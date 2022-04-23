@@ -21,8 +21,15 @@ public class MarkdownParse {
                    openParen == -1 || closeParen == -1){
                     break;
                 }
-                toReturn.add(markdown.substring(openParen + 1, closeParen));
-                currentIndex = closeParen + 1;
+                else if(openBracket != 0 &&
+                        markdown.substring(openBracket-1, openBracket).equals("!")){
+                        System.out.println("Hi");
+                        currentIndex = closeParen + 1;
+                }
+                else{
+                    toReturn.add(markdown.substring(openParen + 1, closeParen));
+                    currentIndex = closeParen + 1;
+                }
             }
             else{
                 break;
