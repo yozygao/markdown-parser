@@ -1,1 +1,1 @@
-[(){}[]ew()[]}9)']Inf
+[[link1](https://something.com)
