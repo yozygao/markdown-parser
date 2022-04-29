@@ -1,1 +1,3 @@
-[not a link]((something.com)
+[hahahahahah]
+this is not a link buddy
+(something.com)
